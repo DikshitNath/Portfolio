@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 1. For Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 2. For IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* 3. Smooth Snap Logic (Keep this) */
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* You can extend your theme here in v4 if needed */
+  --font-display: "Inter", "sans-serif";
+}
+
+
+body {
+  background-image: radial-gradient(#333 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Invert dots for light mode */
+html:not(.dark) body {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
