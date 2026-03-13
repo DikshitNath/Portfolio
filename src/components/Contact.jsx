@@ -10,13 +10,13 @@ const Contact = () => {
   const [status, setStatus] = useState('idle');
   const [focusedField, setFocusedField] = useState(null);
 
-  const headerRef  = useRef(null);
-  const leftRef    = useRef(null);
-  const rightRef   = useRef(null);
+  const headerRef = useRef(null);
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
 
   const headerInView = useInView(headerRef, { once: false, margin: '0px 0px -40px 0px' });
-  const leftInView   = useInView(leftRef,   { once: false, margin: '0px 0px -60px 0px' });
-  const rightInView  = useInView(rightRef,  { once: false, margin: '0px 0px -60px 0px' });
+  const leftInView = useInView(leftRef, { once: false, margin: '0px 0px -60px 0px' });
+  const rightInView = useInView(rightRef, { once: false, margin: '0px 0px -60px 0px' });
 
   const whatsappNumber = "919101195664";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi Dikshit, I saw your portfolio and wanted to connect!`;
@@ -45,7 +45,7 @@ const Contact = () => {
   const inputBase = "w-full p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border text-sm focus:outline-none text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300";
 
   return (
-    <section id="contact" className="min-h-[80vh] pt-30 pb-8 relative z-10 px-4 flex flex-col items-center">
+    <section id="contact" className="min-h-[80vh] pt-4 relative z-10 px-4 flex flex-col items-center">
 
       <div ref={headerRef} className="text-center mb-10">
 
@@ -274,7 +274,7 @@ const Contact = () => {
               className={`mt-10 w-full py-5 text-white font-black uppercase tracking-widest text-xs rounded-2xl transition-colors duration-300 flex items-center justify-center gap-3 disabled:cursor-not-allowed overflow-hidden relative
                 ${status === 'idle' || status === 'submitting' ? 'bg-pink-500 shadow-[0_10px_30px_rgba(236,72,153,0.3)]' : ''}
                 ${status === 'success' ? 'bg-green-500 shadow-[0_10px_30px_rgba(34,197,94,0.3)]' : ''}
-                ${status === 'error'   ? 'bg-red-500   shadow-[0_10px_30px_rgba(239,68,68,0.3)]'  : ''}
+                ${status === 'error' ? 'bg-red-500   shadow-[0_10px_30px_rgba(239,68,68,0.3)]' : ''}
               `}
               initial={{ opacity: 0, y: 16 }}
               animate={rightInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}

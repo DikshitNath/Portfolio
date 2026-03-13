@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Github, ArrowUpRight, Figma } from 'lucide-react';
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import { title } from 'framer-motion/client';
 
 const projects = [
     {
@@ -113,6 +114,34 @@ const projects = [
         links: {
             github: "https://www.figma.com/design/fIE9SrcmyH5HPnq8OgBWwT/Untitled?node-id=0-1&p=f&t=vvdcuFP1aGD38TXb-0",
             live: "https://www.figma.com/proto/fIE9SrcmyH5HPnq8OgBWwT/Untitled?node-id=2-3&p=f&t=RUQUS2IdtikWDNlV-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3"
+        }
+    },
+    {
+        id: 9,
+        title: "DrumKit",
+        subtitle: "Fun Game",
+        year: "2023",
+        category: "Frontend",
+        image: "/projects/drum.png",
+        description: "A simple drum kit game built with HTML, CSS, and JavaScript. It features a responsive design and smooth animations.",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        links: {
+            github: "https://github.com/DikshitNath/DrumKit",
+            live: "https://dikshitnath.github.io/DrumKit/"
+        }
+    },
+    {
+        id: 10,
+        title: "Simon Game",
+        subtitle: "Fun Game",
+        year: "2023",
+        category: "Frontend",
+        image: "/projects/simon.png",
+        description: "A simple pattern remembering game built with HTML, CSS, and JavaScript. It features a responsive design and smooth animations.",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        links: {
+            github: "https://github.com/DikshitNath/SimonGame",
+            live: "https://dikshitnath.github.io/SimonGame/"
         }
     }
 ];
@@ -228,9 +257,9 @@ const Projects = () => {
     );
 
     return (
-        <section id="projects" className="min-h-screen pt-30 pb-8 relative z-10 px-4">
+        <section id="projects" className="min-h-screen pt-30 pb-12 relative z-10 px-4">
 
-            <div ref={headerRef} className="text-center mb-16">
+            <div ref={headerRef} className="text-center mb-14">
 
                 <h2 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white mb-1 tracking-tighter uppercase">
                     <motion.span

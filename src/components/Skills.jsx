@@ -153,7 +153,7 @@ const Skills = () => {
     }, [selectedCategory]);
 
     return (
-        <section id="skills" className="min-h-screen flex flex-col justify-center items-center pt-30 relative z-10">
+        <section id="skills" className="min-h-screen flex flex-col justify-center items-center pt-32 pb-8 relative z-10">
 
             {/* ── HEADER ── */}
             <div ref={headerRef} className="text-center mb-7">
