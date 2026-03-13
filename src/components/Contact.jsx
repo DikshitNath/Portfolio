@@ -45,7 +45,7 @@ const Contact = () => {
   const inputBase = "w-full p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border text-sm focus:outline-none text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 transition-all duration-300";
 
   return (
-    <section id="contact" className="min-h-[80vh] pt-4 relative z-10 px-4 flex flex-col items-center">
+    <section id="contact" className="min-h-[90vh] pt-28 relative z-10 px-4 flex flex-col items-center">
 
       <div ref={headerRef} className="text-center mb-10">
 
