@@ -257,7 +257,7 @@ const Projects = () => {
     );
 
     return (
-        <section id="projects" className="min-h-screen pt-30 pb-12 relative z-10 px-4">
+        <section id="projects" className="min-h-screen pt-30 pb-16 relative z-10 px-4">
 
             <div ref={headerRef} className="text-center mb-14">
 

@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import BackgroundPattern from './components/BackgroundPattern';
 import CustomScrollbar from './components/Scrollbar';
 import { Toaster } from 'react-hot-toast';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
         <Resume />
         <Contact />
       </main>
+
+      <Chatbot />
 
       <footer className="relative z-10 py-8 text-center border-t border-gray-200 dark:border-white/5 bg-transparent">
         <p className="text-[10px] font-black text-gray-400 dark:text-gray-600 uppercase tracking-[0.4em]">

@@ -226,7 +226,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-16 right-8 flex-col items-center gap-2 hidden md:flex z-10"
+        className="absolute bottom-39 right-8 flex-col items-center gap-2 hidden md:flex z-10"
         initial={{ opacity: 0 }} animate={{ opacity: 0.4 }}
         transition={{ delay: 1.9, duration: 1 }}
       >

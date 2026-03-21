@@ -138,7 +138,7 @@ const Certifications = () => {
   const headerInView = useInView(headerRef, { once: false, margin: '0px 0px -40px 0px' });
 
   return (
-    <section id="certifications" className="min-h-screen pt-32 pb-8 relative z-10 px-4">
+    <section id="certifications" className="min-h-screen pt-32 pb-16 relative z-10 px-4">
 
       <div ref={headerRef} className="text-center mb-16 px-4">
 

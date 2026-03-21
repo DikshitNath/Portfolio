@@ -105,7 +105,7 @@ const Achievements = () => {
   return (
     <section
       id="achievements"
-      className="min-h-screen pt-30 pb-8 relative z-10 px-4 flex flex-col items-center justify-center"
+      className="min-h-screen pt-32 pb-16 relative z-10 px-4 flex flex-col items-center justify-center"
     >
 
       <div ref={headerRef} className="text-center mb-12">
