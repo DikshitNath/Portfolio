@@ -135,11 +135,6 @@ const Chatbot = () => {
                             </motion.div>
                         )}
                     </AnimatePresence>
-
-                    {/* Notification Dot */}
-                    {!isOpen && messages.length === 1 && (
-                        <span className="absolute top-0 right-0 w-3.5 h-3.5 bg-pink-500 border-2 border-white dark:border-black rounded-full animate-bounce" />
-                    )}
                 </motion.button>
 
                 {/* 2. THE CHAT WINDOW */}
